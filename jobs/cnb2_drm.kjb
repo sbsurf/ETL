@@ -109,7 +109,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;users.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;users.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -141,7 +141,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;roles.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;roles.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -173,7 +173,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;branches.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;branches.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -205,7 +205,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;regions.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;regions.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -237,7 +237,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;user_branches.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;user_branches.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -269,7 +269,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;regional_managers.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;regional_managers.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -301,7 +301,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;phones.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;phones.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -333,7 +333,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;marget_segments.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;marget_segments.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -365,7 +365,7 @@
       <type>TRANS</type>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>&#47;Users&#47;yrivkind&#47;DRM Track&#47;pentaho&#47;transformations&#47;branch_managers.ktr</filename>
+      <filename>${Internal.Job.Filename.Directory}&#47;..&#47;transformations&#47;branch_managers.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
