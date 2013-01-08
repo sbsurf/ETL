@@ -100,8 +100,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>200</xloc>
-      <yloc>160</yloc>
+      <xloc>11</xloc>
+      <yloc>237</yloc>
       </entry>
     <entry>
       <name>users</name>
@@ -132,8 +132,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>168</yloc>
+      <xloc>72</xloc>
+      <yloc>238</yloc>
       </entry>
     <entry>
       <name>user roles</name>
@@ -164,8 +164,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>523</xloc>
-      <yloc>170</yloc>
+      <xloc>259</xloc>
+      <yloc>240</yloc>
       </entry>
     <entry>
       <name>branches</name>
@@ -196,8 +196,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>729</xloc>
-      <yloc>170</yloc>
+      <xloc>465</xloc>
+      <yloc>240</yloc>
       </entry>
     <entry>
       <name>regions</name>
@@ -228,8 +228,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>624</xloc>
-      <yloc>166</yloc>
+      <xloc>360</xloc>
+      <yloc>236</yloc>
       </entry>
     <entry>
       <name>user branches</name>
@@ -260,8 +260,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>828</xloc>
-      <yloc>171</yloc>
+      <xloc>564</xloc>
+      <yloc>241</yloc>
       </entry>
     <entry>
       <name>regional managers</name>
@@ -292,8 +292,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1073</xloc>
-      <yloc>178</yloc>
+      <xloc>809</xloc>
+      <yloc>248</yloc>
       </entry>
     <entry>
       <name>user phones</name>
@@ -324,8 +324,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>436</xloc>
-      <yloc>172</yloc>
+      <xloc>172</xloc>
+      <yloc>242</yloc>
       </entry>
     <entry>
       <name>market segments</name>
@@ -356,8 +356,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1211</xloc>
-      <yloc>185</yloc>
+      <xloc>947</xloc>
+      <yloc>255</yloc>
       </entry>
     <entry>
       <name>branch managers</name>
@@ -388,8 +388,8 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>943</xloc>
-      <yloc>172</yloc>
+      <xloc>679</xloc>
+      <yloc>242</yloc>
       </entry>
   </entries>
   <hops>

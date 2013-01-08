@@ -118,7 +118,7 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>branch name lookup</from><to>user email lookup</to><enabled>Y</enabled> </hop>  <hop> <from>user email lookup</from><to>location lookup</to><enabled>Y</enabled> </hop>  <hop> <from>location lookup</from><to>user lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Add constants</from><to>drm user locations</to><enabled>Y</enabled> </hop>  <hop> <from>user lookup</from><to>usertype lookup</to><enabled>Y</enabled> </hop>  <hop> <from>usertype lookup</from><to>role lookup</to><enabled>Y</enabled> </hop>  <hop> <from>role lookup</from><to>is_manager</to><enabled>Y</enabled> </hop>  <hop> <from>is_manager</from><to>Add constants</to><enabled>Y</enabled> </hop>  <hop> <from>cnb2 user branches</from><to>Created &amp; updated timestamps</to><enabled>Y</enabled> </hop>  <hop> <from>Created &amp; updated timestamps</from><to>branch name lookup</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>branch name lookup</from><to>user email lookup</to><enabled>Y</enabled> </hop>  <hop> <from>user email lookup</from><to>location lookup</to><enabled>Y</enabled> </hop>  <hop> <from>location lookup</from><to>user lookup</to><enabled>Y</enabled> </hop>  <hop> <from>user lookup</from><to>usertype lookup</to><enabled>Y</enabled> </hop>  <hop> <from>usertype lookup</from><to>role lookup</to><enabled>Y</enabled> </hop>  <hop> <from>role lookup</from><to>is_manager</to><enabled>Y</enabled> </hop>  <hop> <from>cnb2 user branches</from><to>Created &amp; updated timestamps</to><enabled>Y</enabled> </hop>  <hop> <from>Created &amp; updated timestamps</from><to>branch name lookup</to><enabled>Y</enabled> </hop>  <hop> <from>is_manager</from><to>drm user locations</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Add constants</name>
     <type>Constant</type>
@@ -144,8 +144,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1055</xloc>
-      <yloc>172</yloc>
+      <xloc>1048</xloc>
+      <yloc>349</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -241,7 +241,13 @@
            <schema_name/>
            </partitioning>
     <connection>cnb2</connection>
-    <sql>SELECT * FROM branches_users
+    <sql>SELECT branches_users.*, users.*, 
+CASE 
+	WHEN branches_users.branch_id = users.primary_branch_id THEN 1 
+	ELSE 2
+END AS priority
+
+FROM branches_users
 INNER JOIN users ON branches_users.user_id = users.id
 WHERE users.enabled=1;</sql>
     <limit>0</limit>
@@ -316,8 +322,8 @@ WHERE users.enabled=1;</sql>
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1208</xloc>
-      <yloc>181</yloc>
+      <xloc>982</xloc>
+      <yloc>172</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -358,7 +364,7 @@ if (role_name == &apos;BranchManager&apos;){
         <replace>N</replace>
       </field>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>909</xloc>
+      <xloc>875</xloc>
       <yloc>170</yloc>
       <draw>Y</draw>
       </GUI>

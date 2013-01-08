@@ -142,17 +142,6 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>priority</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>1</nullif>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>manager_order</name>
         <type>Integer</type>
         <format/>
@@ -207,6 +196,73 @@ var updated_at = now_utc;</jsScript_script>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>302</xloc>
       <yloc>114</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Insert &#47; Update drm user_locations</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>drm</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>user_locations</table>
+      <key>
+        <name>user_id</name>
+        <field>user_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>location_id</name>
+        <field>location_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>created_at</name>
+        <rename>created_at</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>updated_at</name>
+        <rename>updated_at</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>is_manager</name>
+        <rename>is_manager</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>manager_order</name>
+        <rename>manager_order</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>location_id</name>
+        <rename>location_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>user_id</name>
+        <rename>user_id</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1038</xloc>
+      <yloc>135</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -354,78 +410,6 @@ var updated_at = now_utc;</jsScript_script>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>697</xloc>
-      <yloc>135</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Insert &#47; Update drm user_locations</name>
-    <type>InsertUpdate</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <connection>drm</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema/>
-      <table>user_locations</table>
-      <key>
-        <name>user_id</name>
-        <field>user_id</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>location_id</name>
-        <field>location_id</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>created_at</name>
-        <rename>created_at</rename>
-        <update>N</update>
-      </value>
-      <value>
-        <name>updated_at</name>
-        <rename>updated_at</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>is_manager</name>
-        <rename>is_manager</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>priority</name>
-        <rename>priority</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>manager_order</name>
-        <rename>manager_order</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>location_id</name>
-        <rename>location_id</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>user_id</name>
-        <rename>user_id</rename>
-        <update>Y</update>
-      </value>
-    </lookup>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1038</xloc>
       <yloc>135</yloc>
       <draw>Y</draw>
       </GUI>
