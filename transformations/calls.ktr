@@ -412,41 +412,21 @@
            </partitioning>
     <connection>drm</connection>
     <rowlimit>0</rowlimit>
-    <sql>SELECT contacts.id AS contact_id,
+    <sql>SELECT DISTINCT contacts.id AS contact_id,
 contacts.user_id AS contact_user_id,
 campaign_components_contacts.id AS campaign_components_contacts_id
 
 FROM contacts
-INNER JOIN addresses ON contacts.id = addresses.addressable_id
+LEFT JOIN addresses ON contacts.id = addresses.addressable_id
 AND addresses.addressable_type = &quot;Contact&quot;
-INNER JOIN contact_companies ON contacts.id = contact_companies.contact_id
-INNER JOIN companies ON companies.id = contact_companies.company_id
-INNER JOIN campaign_components_contacts ON contacts.id = campaign_components_contacts.contact_id
+LEFT JOIN contact_companies ON contacts.id = contact_companies.contact_id
+LEFT JOIN companies ON companies.id = contact_companies.company_id
+LEFT JOIN campaign_components_contacts ON contacts.id = campaign_components_contacts.contact_id
 
-WHERE contacts.first_name = ?
-AND contacts.last_name = ?
-AND addresses.postal_code = ?
-AND companies.name = ?
-AND soc = ?</sql>
+WHERE soc = ?</sql>
     <outer_join>N</outer_join>
     <replace_vars>N</replace_vars>
     <parameter>
-      <field>
-        <name>first_name</name>
-        <type>String</type>
-      </field>
-      <field>
-        <name>last_name</name>
-        <type>String</type>
-      </field>
-      <field>
-        <name>zip</name>
-        <type>String</type>
-      </field>
-      <field>
-        <name>company</name>
-        <type>String</type>
-      </field>
       <field>
         <name>soc</name>
         <type>String</type>
